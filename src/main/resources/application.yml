@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_URL}
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+app:
+  topic:
+    device: ${KAFKA_TOPIC}
+    
