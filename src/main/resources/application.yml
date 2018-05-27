@@ -1,11 +1,6 @@
 spring:
   kafka:
+    topic: ${KAFKA_TOPIC}
     bootstrap-servers: ${KAFKA_URL}
-  jackson:
-    serialization:
-      write-dates-as-timestamps: false
-
-app:
-  topic:
-    device: ${KAFKA_TOPIC}
-    
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

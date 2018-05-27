@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.emmanoug.kw</groupId>
+	<groupId>com.gemmano.kw</groupId>
 	<artifactId>kafka-wrapper</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>kafka-wrapper</name>
-	<description>Microservice which append given messages to kafka server.</description>
+	<description>Microservice to append given messages to kafka server.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -57,9 +57,9 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.fasterxml.jackson.datatype</groupId>
-			<artifactId>jackson-datatype-jsr310</artifactId>
-		</dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-json</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
