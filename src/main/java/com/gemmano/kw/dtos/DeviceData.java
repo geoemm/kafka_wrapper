@@ -1,9 +1,9 @@
-package com.emmanoug.kw.dtos;
+package com.gemmano.kw.dtos;
 
 import lombok.Data;
 
 @Data
-public class Thermodata {
+public class DeviceData {
 	
 	private String deviceName;
 	private String data;

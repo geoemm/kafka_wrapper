@@ -1,4 +1,4 @@
-package com.emmanoug.kw.controller;
+package com.gemmano.kw.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.emmanoug.kw.dtos.Thermodata;
-import com.emmanoug.kw.services.KafkaSender;
+import com.gemmano.kw.dtos.DeviceData;
+import com.gemmano.kw.services.KafkaSender;
 
 @RestController
 @RequestMapping("/kafkamsg")
@@ -17,8 +17,8 @@ public class KafkaController {
 	private KafkaSender kafkaSender;
 
 	@RequestMapping(method = RequestMethod.POST)
-	public String kafkaMsg(@RequestBody Thermodata thermodata) {
-		kafkaSender.send(thermodata);
-		return "OK";
+	public String kafkaMsg(@RequestBody DeviceData deviceData) {
+		kafkaSender.send(deviceData);
+		return "OK"; //TODO return better response
 	}
 }
