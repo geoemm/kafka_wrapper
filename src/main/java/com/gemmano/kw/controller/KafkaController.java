@@ -19,6 +19,6 @@ public class KafkaController {
 	@RequestMapping(method = RequestMethod.POST)
 	public String kafkaMsg(@RequestBody DeviceData deviceData) {
 		kafkaSender.send(deviceData);
-		return "OK"; //TODO return better response
+		return "OK";
 	}
 }

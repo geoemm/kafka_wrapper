@@ -1,0 +1,6 @@
+---
+applications:
+- name: kafka-wrapper
+  memory: 768M
+  instances: 1
+  path: target\kafka-wrapper-1.0.0.jar
