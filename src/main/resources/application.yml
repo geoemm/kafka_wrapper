@@ -4,3 +4,6 @@ spring:
     bootstrap-servers: ${KAFKA_URL}
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      
+server:
+  port: 8081

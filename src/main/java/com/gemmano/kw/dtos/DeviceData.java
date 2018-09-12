@@ -6,7 +6,9 @@ import lombok.Data;
 public class DeviceData {
 	
 	private String deviceName;
-	private String data;
+	private String temperature;
+	private String humidity;
+	private String light;
 	private String timestamp;
 	
 }
