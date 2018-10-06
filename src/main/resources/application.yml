@@ -1,9 +1,10 @@
 spring:
   kafka:
-    topic: ${KAFKA_TOPIC}
-    bootstrap-servers: ${KAFKA_URL}
+    
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       
 server:
   port: 8081
+  
+service: kafka-wrapper
