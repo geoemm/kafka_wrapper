@@ -1,7 +1,6 @@
 spring:
   kafka:
-    topic: esp8266_ther2 #${KAFKA_TOPIC}
-    bootstrap-servers: 104.197.156.147:9092 #${KAFKA_URL}
+    
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       
